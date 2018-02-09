@@ -1,9 +1,14 @@
 language: node_js
 node_js:
-  - "node"
+- node
 install:
-  - npm install
+- npm install
 script:
-  - npm run lint
-  - npm run test
-  - npm run build
+- npm run lint
+- npm run test
+- npm run build
+deploy:
+  provider: heroku
+  api_key:
+    secure: VIW/ABBP4UuyIBRXOWv+qRxds1pUI9jzuwqbFSiLn3bJWLr5hNERuw0OLyr8xH1L2NG6NhtcOaGBJzTBdb5V6cnZxXi3TksAsSzgxA2ui32JdWQlf2242/ewqCvutFqGP3oKjLGoURdOc8wYavcplDIbWXxsBAM57CIkmriwIHrT+gjqAvjt+Y1N7qxD3FHKsH9lNLPI96pH1DlO0xxwPYW7qXtGtvmQS4gSYObhx373B/reQqHgL6qWmuR4fdfM71GOnvqMNxYPFDOnjSgsRqC3HZHs3theN7BP0268NT0+LfJHfOhc0/8t0aRoIeuRf9jvO0OoPlANPPRGo4/73j3SM57fD1cEGqAIFGPQg90gWj7HCo6H8Gll/2dN0+/Kbk8U3Pgcuy0Oo7pQ/6hOwn8pTE4mvYUJeJBzd+kSVKwi2aKJFn7T3mRjjGx0IT0ZEVA646hc4sDuTjhPoxlF9DuQpjbXvaCNlmde4Xvp4HA2cOS8cIAOBpv+W9SA49o6YMODOeMMwLjWsUYrnxsioGgsdk8LL/ICRPCnuVYjNwrHET1L2aDq1Y7CBNx2NIhVvnBlX46V0VUMckTfTKgS18SVbAiZwEmv5riesbOBYKJvjW2Jp+6W1z8XWW06A9wA7pp8T381dMtTAciQtp4WwfXtjcreWw63Yhv6OCMktk0=
+  app: react-webgl-starter
