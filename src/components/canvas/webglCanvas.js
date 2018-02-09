@@ -13,7 +13,7 @@ class WebGLCanvas extends React.Component {
     }
 
     componentDidMount() {
-
+        this.renderCanvas();
     }
 
     renderCanvas() {
