@@ -1,5 +1,6 @@
 # React WebGL Starter
 [![Build Status](https://travis-ci.org/mstallmo/react-webgl-starter.svg?branch=master)](https://travis-ci.org/mstallmo/react-webgl-starter)
+[![GitHub last commit](https://img.shields.io/github/last-commit/mstallmo/react-webgl-starter.svg)]()
 
 A React and WebGL 2.0 starter template project for quick ideation
 
