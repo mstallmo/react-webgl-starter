@@ -4,7 +4,7 @@
   "description": "Starter boilerplate for front end React and WebGL 2.0 projects",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
-    "start": "npm-run-all --parallel open:src lint:watch",
+    "start:dev": "npm-run-all --parallel open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
@@ -14,7 +14,7 @@
     "build:html": "babel-node tools/buildHtml.js",
     "prebuild": "npm-run-all clean-dist build:html",
     "build": "babel-node tools/build.js",
-    "start:prod": "node tools/distServer.js"
+    "start": "node tools/distServer.js"
   },
   "repository": {
     "type": "git",
