@@ -26,7 +26,6 @@ class WebGLCanvas extends React.Component {
 
         const vsSource = require('../../shaders/vertex.glsl');
         const fsSource = require('../../shaders/fragment.glsl');
-        vsSource = 'fail';
 
         const shaderProgram = initShaderProgram(gl, vsSource, fsSource);
 
